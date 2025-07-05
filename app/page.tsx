@@ -7,6 +7,11 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { NewsletterForm } from "@/components/newsletter-form"
 import { Toaster } from "@/components/ui/toaster"
 
+export const metadata = {
+  title: 'Home - My Awesome Next.js App',
+  description: 'Welcome to the home page!',
+};
+
 export default function ComingSoon() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
@@ -27,7 +32,7 @@ export default function ComingSoon() {
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               {/* Coming Soon */}
               {/* Bientôt Disponible */}
-              BOUARICONSULTING
+              BOEMIN
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">
@@ -62,7 +67,7 @@ export default function ComingSoon() {
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-slate-400 text-sm mb-6">
-                  Créateur d'outils d'aide à la décision. Maîtrise des technologies web et de la gestion de projets multi-acteurs. Reconnu pour transformer des données complexes en solutions cartographiques accessibles et stratégiques.
+                    Créateur d'outils d'aide à la décision. Maîtrise des technologies web et de la gestion de projets multi-acteurs. Reconnu pour transformer des données complexes en solutions cartographiques accessibles et stratégiques.
                   </p>
 
                   {/* Saïd's Partners */}
@@ -142,12 +147,12 @@ export default function ComingSoon() {
                   </div>
                   <CardTitle className="text-white text-xl">Emmanuel EMEZINA</CardTitle>
                   <CardDescription className="text-slate-300">
-                  Expert en analyse environnementale spécialisé dans l'interprétation des risques naturels et de la  conservation des écosystèmes
+                    Expert en analyse environnementale spécialisé dans l'interprétation des risques naturels et de la  conservation des écosystèmes
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-slate-400 text-sm mb-6">
-                  Maîtrise avancée du traitement et de l'analyse des données raster. Méthodologies d'analyse mixte (quantitative/ qualitative) pour la gestion préventive des risques.
+                    Maîtrise avancée du traitement et de l'analyse des données raster. Méthodologies d'analyse mixte (quantitative/ qualitative) pour la gestion préventive des risques.
                   </p>
 
                   {/* Emmanuel's Partners */}
@@ -254,7 +259,7 @@ export default function ComingSoon() {
                 className="flex items-center space-x-2 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>hello@yourcompany.com</span>
+                <span>hello@boemin.com</span>
               </a>
             </div>
           </div>
@@ -262,7 +267,8 @@ export default function ComingSoon() {
           {/* Progress Indicator */}
           <div className="max-w-md mx-auto">
             <div className="flex justify-between text-sm text-slate-400 mb-2">
-              <span>Development Progress</span>
+              {/* <span>Development Progress</span> */}
+              <span>Pourcentage de développement</span>
               <span>75%</span>
             </div>
             <div className="w-full bg-slate-700 rounded-full h-2">
