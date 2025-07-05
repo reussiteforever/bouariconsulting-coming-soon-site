@@ -8,11 +8,11 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { subscribeToNewsletter } from "@/lib/newsletter-action"
 
 export function NewsletterForm() {
   const [email, setEmail] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [status, setStatus] = useState<string>('');
   const { toast } = useToast()
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -22,22 +22,32 @@ export function NewsletterForm() {
     setIsLoading(true)
 
     try {
-      const result = await subscribeToNewsletter(email)
+      const res = await fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
 
-      if (result.success) {
+      const data: { message: string } = await res.json();
+
+      if (res.ok) {
+        setStatus(data.message);
         toast({
           title: "Success!",
           description: "You've been subscribed to our newsletter. We'll notify you when we launch!",
         })
-        setEmail("")
+        setEmail('');
       } else {
+        setStatus(`Erreur : ${data.message}`);
         toast({
           title: "Error",
-          description: result.error || "Something went wrong. Please try again.",
+          description: data.message || "Something went wrong. Please try again.",
           variant: "destructive",
         })
       }
     } catch (error) {
+      console.error('Erreur lors de l’envoi du formulaire:', error);
+      setStatus('Une erreur s’est produite.');
       toast({
         title: "Error",
         description: "Failed to subscribe. Please try again.",

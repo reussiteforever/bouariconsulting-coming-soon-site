@@ -8,8 +8,8 @@ import { NewsletterForm } from "@/components/newsletter-form"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata = {
-  title: 'Home - My Awesome Next.js App',
-  description: 'Welcome to the home page!',
+  title: 'Boemin - Coming Soon',
+  description: 'Welcome to the Boemin website !',
 };
 
 export default function ComingSoon() {
@@ -133,7 +133,7 @@ export default function ComingSoon() {
                   >
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" size="sm">
                       <Linkedin className="w-4 h-4 mr-2" />
-                      Connect on LinkedIn
+                      Profil LinkedIn
                     </Button>
                   </Link>
                 </CardContent>
@@ -218,7 +218,7 @@ export default function ComingSoon() {
                   >
                     <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full" size="sm">
                       <Linkedin className="w-4 h-4 mr-2" />
-                      Connect on LinkedIn
+                      Profil LinkedIn
                     </Button>
                   </Link>
                 </CardContent>
@@ -228,38 +228,17 @@ export default function ComingSoon() {
 
           {/* Newsletter Signup */}
           <NewsletterForm />
-          {/* <Card className="bg-slate-800/30 border-slate-700 backdrop-blur-sm max-w-md mx-auto">
-            <CardHeader className="text-center">
-              <CardTitle className="text-white flex items-center justify-center space-x-2">
-                <Mail className="w-5 h-5" />
-                <span>Suivez-nous</span>
-              </CardTitle>
-              <CardDescription className="text-slate-300">Soyez le premier informé de notre lancement!</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex space-x-2">
-                <Input
-                  type="email"
-                  placeholder="Entrez votre email"
-                  className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-blue-500"
-                />
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">Me Notifier</Button>
-              </div>
-              <p className="text-xs text-slate-400 mt-2 text-center">Nous ne vous enverrons jamais de spam. Désabonnez-vous à tout moment.</p>
-            </CardContent>
-          </Card> */}
 
           {/* Contact Info */}
           <div className="space-y-4">
             <p className="text-slate-300">Avez-vous des questions ou souhaitez-vous collaborer?</p>
-            {/* <p className="text-slate-300">Have questions or want to collaborate?</p> */}
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-slate-400">
               <a
-                href="mailto:hello@yourcompany.com"
+                href="mailto:info@boemin.com"
                 className="flex items-center space-x-2 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>hello@boemin.com</span>
+                <span>info@boemin.com</span>
               </a>
             </div>
           </div>
@@ -267,7 +246,6 @@ export default function ComingSoon() {
           {/* Progress Indicator */}
           <div className="max-w-md mx-auto">
             <div className="flex justify-between text-sm text-slate-400 mb-2">
-              {/* <span>Development Progress</span> */}
               <span>Pourcentage de développement</span>
               <span>75%</span>
             </div>
@@ -282,7 +260,6 @@ export default function ComingSoon() {
       <footer className="relative z-10 py-6 px-4 border-t border-slate-800">
         <div className="max-w-4xl mx-auto text-center text-slate-400 text-sm">
           <p>&copy; {new Date().getFullYear()} Bouariconsulting. All rights reserved.</p>
-          {/* <p>&copy; {new Date().getFullYear()} Alex Johnson & Sarah Martinez. All rights reserved.</p> */}
         </div>
       </footer>
     </div>
