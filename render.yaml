@@ -7,5 +7,14 @@ services:
     startCommand: pnpm start
     autoDeploy: false
     envVars:
-      - key: PORT
-        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: EMAIL_USER
+        value: khafo5852@gmail.com
+      - key: EMAIL_PASSWORD
+        value: ddltdbezymgzibqx
+    domains:
+      - name: boemin.com
+        type: primary
+        autoAssign: true
+        autoAssignSubdomain: true
