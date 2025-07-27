@@ -90,7 +90,7 @@ export function NewsletterForm() {
             </Button>
           </div>
         </form>
-        <p className="text-xs text-slate-400 mt-2 text-center">Nous ne vous enverrons jamais de spam. Désabonnez-vous à tout moment.</p>
+        <p className="text-xs text-slate-400 mt-2 text-center">Restez connectés à nos projets et aux dernières innovations géospatiales. Désinscription simple.</p>
       </CardContent>
     </Card>
   )

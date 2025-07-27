@@ -35,9 +35,13 @@ export default function ComingSoon() {
               BOEMIN
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">
-              {/* We're building something amazing! Our website is currently under development. */}
-              Nous construisons quelque chose d'incroyable ! Notre site web est actuellement en cours de développement.
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
+              Cabinet d'expertise géospatiale et environnementale. <br />
+              Solutions innovantes pour l'Afrique de l'Ouest. <br />
+              Transport • Mines • Agriculture • Urbanisme • Télécoms • Électricité <br />
+            </p>
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Notre nouveau site web arrive bientôt.
             </p>
 
             <div className="flex items-center justify-center space-x-2 text-slate-400">
@@ -72,7 +76,7 @@ export default function ComingSoon() {
 
                   {/* Saïd's Partners */}
                   <div className="mb-6">
-                    <h4 className="text-slate-300 text-sm font-medium mb-3">Dernières Collaborations</h4>
+                    <h4 className="text-slate-300 text-sm font-medium mb-3">Formations & Expériences</h4>
                     <div className="grid grid-cols-2 gap-3">
                       <Link
                         href="https://www.unige.ch/"
@@ -157,7 +161,7 @@ export default function ComingSoon() {
 
                   {/* Emmanuel's Partners */}
                   <div className="mb-6">
-                    <h4 className="text-slate-300 text-sm font-medium mb-3">Dernières Collaborations</h4>
+                    <h4 className="text-slate-300 text-sm font-medium mb-3">Formations & Expériences</h4>
                     <div className="grid grid-cols-2 gap-3">
                       <Link
                         href="https://www.unil.ch/unil/fr/home.html"
@@ -178,7 +182,7 @@ export default function ComingSoon() {
                         className="bg-slate-700/50 border border-slate-600 rounded-lg p-3 hover:bg-slate-700 transition-all duration-300 group"
                       >
                         <img
-                          src="/assets/knust_logo.jpg"
+                          src="/assets/knust_logo.png"
                           alt="KNUST Logo"
                           className="w-full h-8 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
                         />
@@ -202,7 +206,7 @@ export default function ComingSoon() {
                         className="bg-slate-700/50 border border-slate-600 rounded-lg p-3 hover:bg-slate-700 transition-all duration-300 group"
                       >
                         <img
-                          src="/assets/unibe_logo.jpg"
+                          src="/assets/unibe_logo.png"
                           alt="UNIBE Logo"
                           className="w-full h-8 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
                         />
@@ -259,7 +263,7 @@ export default function ComingSoon() {
       {/* Footer */}
       <footer className="relative z-10 py-6 px-4 border-t border-slate-800">
         <div className="max-w-4xl mx-auto text-center text-slate-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Bouariconsulting. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} BOEMIN. All rights reserved.</p>
         </div>
       </footer>
     </div>
