@@ -46,7 +46,7 @@ export default function ComingSoon() {
 
             <div className="flex items-center justify-center space-x-2 text-slate-400">
               <Clock className="w-5 h-5" />
-              <span>Lancement prévu: Octobre 2025</span>
+              <span>Lancement prévu: Juin 2026</span>
               {/* <span>Expected launch: Q2 2024</span> */}
             </div>
           </div>
