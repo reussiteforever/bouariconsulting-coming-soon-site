@@ -57,7 +57,7 @@ export default buildConfig({
     },
   ],
   email: nodemailerAdapter({
-    defaultFromAddress: process.env.EMAIL_USER || 'info@boemin.com',
+    defaultFromAddress: process.env.EMAIL_USER || 'boemin.sig@protonmail.com',
     defaultFromName: 'BOEMIN',
     // Nodemailer transport options
     transportOptions: {
