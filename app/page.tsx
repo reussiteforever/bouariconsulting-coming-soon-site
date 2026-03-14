@@ -8,7 +8,7 @@ import { NewsletterForm } from "@/components/newsletter-form"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata = {
-  title: 'Boemin - Coming Soon',
+  title: 'Boemin',
   description: 'Welcome to the Boemin website !',
   icons: {
     icon: '/favicon.svg',
@@ -33,8 +33,7 @@ export default function ComingSoon() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              {/* Coming Soon */}
-              {/* Bientôt Disponible */}
+
               BOEMIN
             </h1>
 
@@ -43,21 +42,13 @@ export default function ComingSoon() {
               Solutions innovantes pour l'Afrique de l'Ouest. <br />
               Transport • Mines • Agriculture • Urbanisme • Télécoms • Électricité <br />
             </p>
-            {/* <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Notre nouveau site web arrive bientôt.
-            </p> */}
 
-            {/* <div className="flex items-center justify-center space-x-2 text-slate-400">
-              <Clock className="w-5 h-5" />
-              <span>Lancement prévu: Juin 2026</span>
-            </div> */}
           </div>
 
           {/* Creators Section */}
           <div className="space-y-8">
             <div className="flex items-center justify-center space-x-2 text-slate-300">
               <Users className="w-6 h-6" />
-              {/* <h2 className="text-2xl font-semibold">Meet Our Founders</h2> */}
               <h2 className="text-2xl font-semibold">Les Fondateurs</h2>
             </div>
 
@@ -240,25 +231,14 @@ export default function ComingSoon() {
             <p className="text-slate-300">Avez-vous des questions ou souhaitez-vous collaborer?</p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-slate-400">
               <a
-                href="mailto:info@boemin.com"
+                href="mailto:boemin.group@gmail.com"
                 className="flex items-center space-x-2 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>boemin.sig@protonmail.com</span>
+                <span>boemin.group@gmail.com</span>
               </a>
             </div>
           </div>
-
-          {/* Progress Indicator */}
-          {/* <div className="max-w-md mx-auto">
-            <div className="flex justify-between text-sm text-slate-400 mb-2">
-              <span>Pourcentage de développement</span>
-              <span>75%</span>
-            </div>
-            <div className="w-full bg-slate-700 rounded-full h-2">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-3/4 transition-all duration-1000"></div>
-            </div>
-          </div> */}
         </div>
       </div>
 
