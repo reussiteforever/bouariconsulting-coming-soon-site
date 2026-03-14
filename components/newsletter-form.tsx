@@ -33,14 +33,14 @@ export function NewsletterForm() {
       if (res.ok) {
         setStatus(data.message);
         toast({
-          title: "Success!",
-          description: "You've been subscribed to our newsletter. We'll notify you when we launch!",
+          title: "Succès!",
+          description: "Vous êtes désormais abonné à notre newsletter. Nous vous tiendrons au courant dès le lancement !",
         })
         setEmail('');
       } else {
         setStatus(`Erreur : ${data.message}`);
         toast({
-          title: "Error",
+          title: "Erreur",
           description: data.message || "Something went wrong. Please try again.",
           variant: "destructive",
         })
@@ -49,8 +49,8 @@ export function NewsletterForm() {
       console.error('Erreur lors de l’envoi du formulaire:', error);
       setStatus('Une erreur s’est produite.');
       toast({
-        title: "Error",
-        description: "Failed to subscribe. Please try again.",
+        title: "Erreur",
+        description: "L'abonnement a échoué. Veuillez réessayer.",
         variant: "destructive",
       })
     } finally {
@@ -64,10 +64,7 @@ export function NewsletterForm() {
         <CardTitle className="text-white flex items-center justify-center space-x-2">
           <Mail className="w-5 h-5" />
           <span>Suivez-nous</span>
-          {/* <span>Stay Updated</span> */}
         </CardTitle>
-        <CardDescription className="text-slate-300">Soyez le premier informé de notre lancement!</CardDescription>
-        {/* <CardDescription className="text-slate-300">Be the first to know when we launch!</CardDescription> */}
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit}>
